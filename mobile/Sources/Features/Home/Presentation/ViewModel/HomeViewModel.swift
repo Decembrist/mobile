@@ -6,12 +6,14 @@
 //
 
 import Foundation
+import Observation
 
 @MainActor
-final class HomeViewModel: ObservableObject {
-    @Published var items: [HomeItem] = []
-    @Published var isLoading: Bool = false
-    @Published var errorMessage: String?
+@Observable
+final class HomeViewModel {
+    var items: [HomeItem] = []
+    var isLoading: Bool = false
+    var errorMessage: String?
     
     private let repository: HomeRepositoryProtocol
     
