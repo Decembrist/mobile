@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HomeItem {
+struct HomeItem: Identifiable {
     let id: String
     let title: String
     let description: String
