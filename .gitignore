@@ -1,52 +1,57 @@
+```
+# Build artifacts
+*.o
+*.obj
+*.a
+*.lib
+*.dylib
+*.so
+*.dll
+*.exe
+*.out
+
 # Xcode
-build/
+*.xcodeproj/
+*.xcworkspace/
 *.pbxuser
-!default.pbxuser
 *.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
 *.perspectivev3
-!default.perspectivev3
+*.xcuserstate
 *.xccheckout
 *.moved-aside
-DerivedData
-*.xcscmblueprint
-*.xcscheme
+build/
+DerivedData/
 
-# Swift Package Manager
-.swiftpm/
-Package.resolved
+# Swift
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
 
-# CocoaPods
-Pods/
-Podfile.lock
-
-# Build/compiled files
-*.o
-*.a
-*.dylib
-*.framework
-*.app
-*.ipa
-*.dSYM
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.swp
+# Dependencies
+Pods/
+Carthage/
+.externalNativeBuild/
+.gradle/
+build/
 
 # IDE
 .vscode/
 .idea/
+*.userprefs
 
-# OS generated files
+# OS generated
 .DS_Store
 Thumbs.db
+```

@@ -25,6 +25,7 @@ final class AppCoordinator: Coordinator {
     
     func start() {
         let authCoordinator = AuthCoordinator(navigationController: UINavigationController())
+        authCoordinator.parentCoordinator = self
         childCoordinators.append(authCoordinator)
         authCoordinator.start()
         
