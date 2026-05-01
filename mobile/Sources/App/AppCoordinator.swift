@@ -11,7 +11,6 @@ import Observation
 protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     func start()
-    func showHome()
 }
 
 @Observable
