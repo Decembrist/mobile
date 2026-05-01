@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject private var viewModel: AuthViewModel
+    private let viewModel: AuthViewModel
     
     init(viewModel: AuthViewModel) {
-        _viewModel = StateObject(wrappedValue: viewModel)
+        self.viewModel = viewModel
     }
     
     var body: some View {

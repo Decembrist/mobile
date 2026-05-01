@@ -13,36 +13,43 @@
 # Xcode
 *.xcodeproj/
 *.xcworkspace/
-*.swiftmodule/
-*.swo
-*.swp
+*.xcuserstate
+*.swiftpm/
+build/
+DerivedData/
 
-# Temporary files
-*.tmp
+# Swift
+*.swiftmodule
+*.swiftdoc
+*.sib
+
+# Dependencies
+Carthage/
+Pods/
+vendor/
+
+# Logs
 *.log
-.DS_Store
-Thumbs.db
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# Dependencies
-node_modules/
-Pods/
-Carthage/
-build/
-DerivedData/
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
 
-# Coverage
+# Testing
 .coverage
 coverage/
 htmlcov/
 
-# Swift Package Manager
-.swiftpm/
-Package.resolved
-
-# Original rules preserved
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 ```
