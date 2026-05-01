@@ -1,0 +1,39 @@
+```
+# Build artifacts
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+*.swiftmodule/
+*.swo
+*.swp
+
+# Swift Package Manager
+.swiftpm/
+
+# Derived data
+DerivedData/
+
+# Temporary files
+*.tmp
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Dependencies
+node_modules/
+Pods/
+Carthage/
+```
