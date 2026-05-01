@@ -6,18 +6,17 @@
 //
 
 import Foundation
-import Combine
+import Observation
 
-@MainActor
-final class AuthViewModel: ObservableObject {
-    @Published var email: String = ""
-    @Published var password: String = ""
-    @Published var isLoading: Bool = false
-    @Published var errorMessage: String?
-    @Published var shouldNavigateToHome: Bool = false
+@Observable
+final class AuthViewModel {
+    var email: String = ""
+    var password: String = ""
+    var isLoading: Bool = false
+    var errorMessage: String?
+    var shouldNavigateToHome: Bool = false
     
     private let loginUseCase: LoginUseCaseProtocol
-    private var cancellables = Set<AnyCancellable>()
     
     init(loginUseCase: LoginUseCaseProtocol) {
         self.loginUseCase = loginUseCase

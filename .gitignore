@@ -4,8 +4,8 @@
 *.obj
 *.a
 *.lib
-*.so
 *.dylib
+*.so
 *.dll
 *.exe
 *.out
@@ -17,15 +17,11 @@
 *.swo
 *.swp
 
-# Swift Package Manager
-.swiftpm/
-
-# Derived data
-DerivedData/
-
 # Temporary files
 *.tmp
 *.log
+.DS_Store
+Thumbs.db
 
 # Environment
 .env
@@ -36,4 +32,17 @@ DerivedData/
 node_modules/
 Pods/
 Carthage/
+build/
+DerivedData/
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+
+# Original rules preserved
 ```

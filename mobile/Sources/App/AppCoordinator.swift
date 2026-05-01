@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import Observation
 
 protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get set }
     func start()
 }
 
-final class AppCoordinator: ObservableObject, Coordinator {
+@Observable
+final class AppCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     
     private var window: UIWindow
