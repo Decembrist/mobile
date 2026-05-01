@@ -11,7 +11,7 @@ import UIKit
 final class AuthCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     
-    weak var parentCoordinator: Coordinator?
+    weak var parentCoordinator: AppCoordinator?
     
     let navigationController: UINavigationController
     
