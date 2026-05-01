@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    private let viewModel: AuthViewModel
+    @Bindable private var viewModel: AuthViewModel
     
     init(viewModel: AuthViewModel) {
         self.viewModel = viewModel
